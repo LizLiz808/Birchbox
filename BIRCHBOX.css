@@ -1,34 +1,164 @@
 * {
   box-sizing: border-box;
 }
-
-.myForm {
+.site-header {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  padding-left: 198px;
+  padding-right: 288px;
+  box-shadow: 0 2px 2px -2px gray;
 }
 
+.left-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-section img {
+  width: 108px;
+  height: auto;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-left: 260px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 14px;
+}
+.birchbox-edit {
+  position: relative;
+}
+
+.birchbox-edit::before,
+.birchbox-edit::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: gray;
+}
+
+.birchbox-edit::before {
+  left: -20px;
+}
+
+.birchbox-edit::after {
+  right: -20px;
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.icon {
+  width: 17px;
+  height: 17px;
+}
+.rubrik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px; 
+}
+
+.rubrik-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 24px; 
+  font-weight: 100;
+  margin: 8px 0; 
+  color:rgb(92, 91, 91);
+}
+
+.underrubrik-text {
+  font-size: 16px; 
+  margin: 4px 0; 
+  color: #666; /
+}
 input[type="text"],
 input[type="password"],
 textarea,
 select {
   width: 100%;
-  padding: 8px;
+  height: 54px;
+  padding: 16px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  margin-bottom: 10px;
 }
-
+.names-content {
+  display: flex;
+  justify-content: center; 
+  gap: 28px; 
+  margin-top: 10px; 
+}
 .inputName {
   display: flex;
-  flex-direction: column;
-  flex: 1;
+  flex-direction: column; 
+  align-items: center; 
+  width: 168px; 
+  color:gray;
 }
 
-.names {
+.input-content {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   gap: 10px;
+  margin-bottom: 8px;
+  color:gray;
+}
+.input-mail, .input-password {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%; 
+  height: 104px;
+  color:gray;
+}
+.input-mail label, .input-mail input, 
+.input-password label, .input-password input {
+  width: 22%;
+  height: 116px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  color:gray;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: center; 
+  font-size: 13px;
+  
+}
+
+.checkbox {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  color:gray;
 }
 
 .btn {
   align-self: center;
+  width: 22%;
+  background-color: black;
+  color: azure;
+  height: 54px;
 }
